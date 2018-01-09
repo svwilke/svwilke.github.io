@@ -1,11 +1,60 @@
-<html>
+<!doctype html>
+<html lang="en">
     <head>
         <title>Sven Wilke</title>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $( function() {
+            $("#accordion").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: "content"
+            });
+            } );
+        </script>
     </head>
     <body>
         <div class="header">
-            <h1>Portfolio for Sven Wilke</h1>
+            <center><h1>Portfolio</h1></center>
+            <div id="profile">
+                <div class="left">
+                    <img src="profile.png">
+                </div>
+                <div class="right">
+                    <h2>About Me</h2>
+                    <p>Ich bin der tolle Sven, der, den alle kenn'n.</p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div id="accordion">
+            <h3>Unity Projects</h3>
+            <div class="section" id="unity">
+                <p>These are projects I've created using Unity.</p>
+            </div>
+            <h3>Other Projects</h3>
+            <div class="section" id="other">
+                <p>My experiences with other engines and languages!</p>
+            </div>
+            <h3 id="last">Courses</h3>
+            <div class="section" id="courses">
+                <p>These are relevant courses I've taken at uni.</p>
+                <ul>
+                    <li>Artificial Intelligence</li>
+                    <li>Human-Computer Interaction</li>
+                    <li>Machine Learning</li>
+                    <li>Software Development</li>
+                    <li>Computational Creativity</li>
+                    <li>Virtual Reality in Unity</li>
+                    <li>2D Computer Graphics and Simulation</li>
+                    <li>Designing for Entertainment and Play</li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>

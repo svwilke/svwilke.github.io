@@ -1,0 +1,98 @@
+html {
+    background-image: url(crumple.jpg);
+}
+
+body {
+    border: 2px solid darkslategray;
+    background-image: url(paper_texture.png);
+    border-radius: 10px;
+    font-family: 'Arbutus Slab';
+    position: relative;
+    left: 25vw;
+    width: 50vw;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    position: relative;
+    top: 20px;
+    margin-bottom: 50px;
+}
+
+#profile {
+    position: relative;
+    border: 3px solid gray;
+    border-radius: 5px;
+    height: 300px;
+    background-color: #a0a0a0;
+    box-shadow: 2px 2px #2E2E2E;
+    width: 90%;
+    left: 5%;
+    display: inline-flex;
+}
+
+#profile > .left {
+    width: 45%;
+    position: relative;
+    height: 100%;
+}
+
+#profile > .right {
+    width: 50%;
+    position: relative;
+    height: 100%;
+}
+
+#profile > div > p {
+    text-align: justify;
+}
+
+#profile > div > img {
+    position: absolute;
+    height: 90%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid gray;
+}
+
+p {
+    position: relative;
+}
+
+.ui-accordion .ui-accordion-header {
+    margin: 0;
+}
+
+.ui-accordion-content {
+    border: 0;
+}
+
+.ui-accordion-header {
+    background-color: #9A80D8;
+    color: #444444;
+    border-radius: 0;
+    border: 0;
+    
+}
+
+:focus {
+    outline: 0;
+}
+
+.ui-state-focus {
+    border: 0;
+    border-image-width: 0;
+}
+
+.ui-accordion-header-active {
+    background-color: #915FC4;
+    color: #FFFFFF;
+}
+
+.ui-accordion {
+    font-family: 'Arbutus Slab';
+    padding-bottom: 20px;
+}
