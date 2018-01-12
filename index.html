@@ -2,9 +2,70 @@
 <html lang="en">
     <head>
         <title>Sven Wilke</title>
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arbutus Slab">
+    </head>
+    <body>
+            <div class="header">
+                <center><h1>Portfolio</h1></center>
+                <div id="profile" class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="res/profile.png" id="profilePicture">
+                        </div>
+                        <div class="col">
+                            <h2>About Me</h2>
+                            <p>Hello, my name is Sven! Even before I left school I became passionate about game development. After learning Java, I discovered Unity. It quickly became my favorite tool to create games with. During my time at university studying cognitive science, I kept game development as a hobby. Because crafting joyful experiences is more fun for me than anything else, I decided I want to become a professional.</p>
+                            <p>Apart from game development, I enjoy playing games of all kinds, be it digital, board, or card game. The competitive and social aspects are what I enjoy most about games. Other than that, I like to play table tennis and darts and would not like to live a life without music.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <div id="accordion">
+                <h3>Unity Projects</h3>
+                <div class="section" id="unity">
+                    <p class="desc">These are examples of projects I created in Unity. I have provided a GIF for each of them. Project or source files are not always there however, because most of the projects did not survive several hardware switches or Windows reinstalls.</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col project">
+                                <a data-fancybox="gallery" data-caption="This is a virtual reality game I created in a group of 6 people for a course at university. It is designed for cardboard VR. The storyline has the protagonist waking up late and wanting to make some tea, needing to collect all the necessary ingredients. In order to do so, the player needs to solve different puzzles in the house." href="res/teatime.gif"><img src="res/teatime_thumb.png"></a>
+                                <p class="title">Tea Time</p>
+                            </div>
+                            <div class="col">
+                                <h2>Project 2</h2>
+                            </div>
+                            <div class="col">
+                                <h2>Project 3</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Other Projects</h3>
+                <div class="section" id="other">
+                    <p>My experiences with other engines and languages!</p>
+                </div>
+                <h3 id="last">Courses</h3>
+                <div class="section" id="courses">
+                    <p>These are relevant courses I've taken at uni.</p>
+                    <ul>
+                        <li>Artificial Intelligence</li>
+                        <li>Human-Computer Interaction</li>
+                        <li>Machine Learning</li>
+                        <li>Software Development</li>
+                        <li>Computational Creativity</li>
+                        <li>Virtual Reality in Unity</li>
+                        <li>2D Computer Graphics and Simulation</li>
+                        <li>Designing for Entertainment and Play</li>
+                    </ul>
+                </div>
+            </div>
+
+
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script>
@@ -16,45 +77,8 @@
             });
             } );
         </script>
-    </head>
-    <body>
-        <div class="header">
-            <center><h1>Portfolio</h1></center>
-            <div id="profile">
-                <div class="left">
-                    <img src="profile.png">
-                </div>
-                <div class="right">
-                    <h2>About Me</h2>
-                    <p>Ich bin der tolle Sven, der, den alle kenn'n.</p>
-                </div>
-            </div>
-        </div>
-        <br />
-        <br />
-        <div id="accordion">
-            <h3>Unity Projects</h3>
-            <div class="section" id="unity">
-                <p>These are projects I've created using Unity.</p>
-            </div>
-            <h3>Other Projects</h3>
-            <div class="section" id="other">
-                <p>My experiences with other engines and languages!</p>
-            </div>
-            <h3 id="last">Courses</h3>
-            <div class="section" id="courses">
-                <p>These are relevant courses I've taken at uni.</p>
-                <ul>
-                    <li>Artificial Intelligence</li>
-                    <li>Human-Computer Interaction</li>
-                    <li>Machine Learning</li>
-                    <li>Software Development</li>
-                    <li>Computational Creativity</li>
-                    <li>Virtual Reality in Unity</li>
-                    <li>2D Computer Graphics and Simulation</li>
-                    <li>Designing for Entertainment and Play</li>
-                </ul>
-            </div>
-        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
     </body>
 </html>
