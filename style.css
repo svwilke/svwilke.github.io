@@ -9,6 +9,7 @@ body {
     top: 20px;
     border: 2px solid darkslategray;
     background-color: rgba(255, 255, 255, 0.6);
+    background-image: url(res/backing.png);
     border-radius: 10px;
     font-family: 'Abel';
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -28,7 +29,7 @@ h1 {
 
 #profile {
     border-radius: 5px;
-    background-color: rgb(196, 196, 196);
+    background-color: rgba(196, 196, 196, 0.93);
     box-shadow: 5px 5px 5px #2E2E2E;
     width: 95%;
 }
@@ -44,8 +45,8 @@ h1 {
     border: 2px solid darkslategray;
 }
 
-p {
-    position: relative;
+.text {
+    color: black;
     text-align: justify;
 }
 
@@ -64,7 +65,13 @@ p {
 }
 
 .desc {
+    position: relative;
+    text-align: justify;
     color: #646464;
+}
+
+.ui-widget-content a {
+    color: #2E2468;
 }
 
 .ui-accordion .ui-accordion-header {
@@ -76,7 +83,7 @@ p {
 }
 
 .ui-accordion-header {
-    background-color: #9A80D8;
+    background-color: #9485FF;
     color: #444444;
     border-radius: 0;
     border: 0;
@@ -93,7 +100,7 @@ p {
 }
 
 .ui-accordion-header-active {
-    background-color: #915FC4;
+    background-color: #2E2468;
     color: #FFFFFF;
 }
 
