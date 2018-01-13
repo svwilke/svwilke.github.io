@@ -45,6 +45,12 @@ h1 {
     border: 2px solid darkslategray;
 }
 
+@media screen and (min-width: 1601px) {
+    #profilePicture {
+        width: 145px;
+    }
+}
+
 .text {
     color: black;
     text-align: justify;
@@ -87,7 +93,6 @@ h1 {
     color: #444444;
     border-radius: 0;
     border: 0;
-    
 }
 
 :focus {
@@ -107,4 +112,8 @@ h1 {
 .ui-accordion {
     font-family: 'Abel';
     padding-bottom: 20px;
+}
+
+.ui-accordion > .ui-accordion-header {
+    font-size: 20pt;
 }
