@@ -89,7 +89,7 @@ h1 {
 }
 
 .ui-accordion-header {
-    background-color: #9485FF;
+    background-color: #59B34D;
     color: #444444;
     border-radius: 0;
     border: 0;
@@ -105,7 +105,7 @@ h1 {
 }
 
 .ui-accordion-header-active {
-    background-color: #2E2468;
+    background-color: #418439;
     color: #FFFFFF;
 }
 
